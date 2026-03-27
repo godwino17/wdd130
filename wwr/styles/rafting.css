@@ -1,5 +1,4 @@
 :root {
-    --primary-color: rgb(44, 31, 224);
     --color2: rgb(5, 5, 1);
     --body-font: Arial, Helvetica, sans-serif;
     --devices-width: 840px;
@@ -110,7 +109,7 @@ section {
     margin: 30px 0;
 }
 
-section figure {
+.gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
@@ -118,7 +117,7 @@ section figure {
     width: 97%;
 }
 
-figure div {
+.gallery figure {
     display: grid;
     place-items: center;
 }
