@@ -1,0 +1,21 @@
+thead th,
+tfoot tr {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+table {
+    border: 2px solid rgb(140 140 140);
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    font-family: sans-serif;
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+}
