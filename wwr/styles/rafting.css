@@ -1,8 +1,9 @@
 :root {
-    --color2: rgb(5, 5, 1);
     --body-font: Arial, Helvetica, sans-serif;
     --devices-width: 840px;
     --devices-margin: 0 auto;
+    --hbc: #004080;
+    --htc: #ffcc00;
 }
 
 * {
@@ -12,9 +13,175 @@
     font-family: var(--body-font);
 }
 
+/* HOME PAGE CSS BEGIN HERE 👇🏼 */
+.home {
+    width: var(--devices-width);
+    margin: var(--devices-margin);
+    padding: 0 0.5rem;
+}
+
+.home nav {
+    width: 100%;
+    height: 150px;
+}
+
+.home header {
+    height: 150px;
+}
+
+.home .hero {
+    position: relative;
+}
+
+.home h1 {
+    text-align: center;
+    position: absolute;
+    top: -40px;
+    /* left: 65px; */
+    right: 65px;
+    color: #0077be;
+    text-shadow: 0 0 5px rgba(0, 119, 190, 0.5),
+        0 0 10px rgba(100, 200, 255, 0.3);
+    font-family: Arial, sans-serif;
+}
+
+.home img {
+    display: block;
+    margin: 15px auto;
+}
+
+.home .hero img {
+    box-shadow: -15px 0 15px rgba(0, 0, 0, 0.342),
+        15px 0 15px rgba(0, 0, 0, 0.315);
+}
+
+.home .content {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    place-items: center;
+}
+
+.home .content div {
+    width: 277px;
+    border: 2px solid rgba(48, 48, 190, 0.829);
+    background-color: #3b84af71;
+}
+
+.home .content p {
+    padding: 0 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home .content div img {
+    width: 270px;
+    height: 155px;
+    margin-top: 0px;
+}
+
+.home article h2 {
+    text-align: center;
+    color: #0077be;
+}
+
+.home form {
+    border: 1px solid rgba(22, 22, 22, 0.438);
+    padding: 0 25px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: #e6f2ff;
+    border-radius: 10px;
+    box-shadow: 10px #6bb0e2;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 30px rgb(0, 0, 0, 0.2);
+}
+
+.home form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.home form .info {
+    margin: 0 0 15px;
+}
+
+form .info {
+    color: #0077cc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+form input {
+    padding: 5px;
+    margin-left: 15px;
+    border: 1px solid blue;
+    background-color: wheat;
+    width: 250px;
+    font-weight: bold;
+}
+
+.four select {
+    border: 1px solid blue;
+    padding: 4px;
+    margin-left: 5px;
+}
+
+.one input,
+.two input {
+    margin-left: 21px;
+}
+
+.home form button {
+    background-color: darkblue;
+    color: white;
+    width: 200px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: none;
+}
+
+.home form button:hover {
+    /* background-color: #0077cc; */
+    /* box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; */
+    box-shadow: 0 0 20px #0077cc, 0 0 40px #0077cc;
+    transform: scale(1.05);
+}
+
+.stories {
+    margin: 20px 5px;
+    padding: 10px;
+}
+
+.stories h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0077be;
+}
+
+#link {
+    text-align: center;
+    margin-top: 15px;
+    height: 30px;
+}
+
+#link a {
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    border: 1px solid #000;
+    text-decoration: none;
+    padding-top: 6px;
+    color: yellow;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* HOME PAGE CSS ENDS HERE 👆🏼 */
+
 .about {
     font-family: var(--body-font);
-    color: var(--color2);
     width: var(--devices-width);
     margin: var(--devices-margin);
 }
@@ -72,8 +239,8 @@ li {
     padding: 1px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--color2);
-    color: #fff;
+    background-color: var(--hbc);
+    color: var(--htc);
     font-family: var(--body-font);
 }
 
@@ -151,12 +318,12 @@ li {
     margin: 15px;
 }
 
-h2 {
-    background-color: black;
+.about h2 {
+    background-color: var(--hbc);
     width: 100%;
     padding: 10px;
     text-align: center;
-    color: wheat;
+    color: var(--htc);
     font-family: var(--body-font);
 }
 
@@ -204,7 +371,7 @@ footer p {
 /* Contact Us Page Addition Start here 👇🏼 */
 
 /* Address section styling begin here 👇🏼 */
-.address {
+.contact .address {
     background-color: #004080;
     color: #ffffff;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -214,27 +381,36 @@ footer p {
     box-shadow: 0 4px 30px rgb(0, 0, 0, 0.2);
 }
 
-.address h1 {
+.contact .address h1 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #ffcc00;
+    color: var(--htc);
 }
 
-.address p {
+.contact h2 {
+    background-color: var(--hbc);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: var(--htc);
+    font-family: var(--body-font);
+}
+
+.contact .address p {
     margin: 10px;
     font-size: 18px;
 }
 
 /* Address section styling ends here 👆🏼*/
-.profile {
+.contact .profile {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 15px;
 }
 
-.profile figure {
+.contact .profile figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,7 +418,7 @@ footer p {
     width: 140px;
 }
 
-.profile img {
+.contact .profile img {
     width: 100%;
     height: 100%;
 }
@@ -250,7 +426,6 @@ footer p {
 .contact {
     width: 840px;
     margin: 0 auto;
-    /* background-color: rgba(214, 205, 188, 0.63); */
 }
 
 .contact figcaption {
@@ -264,80 +439,81 @@ footer p {
     height: auto;
 }
 
-.map-div,
-form {
+.contact .map-div,
+.contact form {
     width: 420px;
 }
 
-iframe,
-form {
+.contact iframe,
+.contact form {
     width: 400px;
     padding: 10px;
 }
 
-form {
+.contact form {
     padding-right: 50px;
+    width: 420px;
     display: grid;
     position: relative;
     background-color: #e6f2ff;
     color: #333;
     border-radius: 10px;
-    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-form div,
-form fieldset {
+.contact form div,
+.contact form fieldset {
     display: grid;
     justify-content: start;
     align-items: center;
     width: 370px;
 }
 
-form label {
-    color: #004080;
+.contact form label {
+    color: var(--hbc);
     font-weight: bold;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
     background-color: #fff;
     color: #333;
     border: 1px solid #99ccff;
     border-radius: 6px;
 }
 
-.name,
-.email {
+.contact .name,
+.contact .email {
     display: flex;
     margin-bottom: 10px;
 }
 
-.name {
+.contact .name {
     justify-content: center;
     align-items: center;
 }
 
-.email {
+.contact .email {
     justify-content: center;
     align-items: start;
     margin-bottom: 0;
 }
 
-.name input,
-.email input {
+.contact .name input,
+.contact .email input {
     width: 100%;
     padding: 5px;
     margin-left: 40px;
 }
 
-.message {
+.contact .message {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.message textarea {
+.contact .message textarea {
     width: 100%;
     height: 100%;
     padding: 10px;
@@ -345,35 +521,34 @@ form textarea {
 }
 
 .checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    height: 24.8px;
-    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 0.2fr 3fr;
+    width: 390px;
+    height: 20px;
     font-size: small;
+
 }
 
-.checkbox label {
-    margin-left: 3px;
-    width: 100%;
+.checkbox input {
+    width: 15px;
+    margin: 0;
 }
 
-.radio {
+.contact .radio {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     margin-bottom: 10px;
 }
 
-.radio div {
+.contact .radio div {
     width: 230px;
     display: grid;
     grid-template-columns: .1fr 3fr;
     font-size: small;
 }
 
-.radio p {
+.contact .radio p {
     grid-row-start: 1;
     grid-row-end: 4;
     color: #333;
@@ -381,26 +556,120 @@ form textarea {
     font-weight: bold;
 }
 
-.radio label {
+.contact .radio label {
     height: 20px;
 }
 
-.radio input {
+.contact .radio input {
     width: 30px;
 }
 
-button {
+.contact button {
     background-color: #0077cc;
     color: white;
     position: absolute;
     width: 370px;
     height: 35px;
-    bottom: 18px;
+    bottom: 11px;
     left: 10px;
     border: none;
     border-radius: 6px;
 }
 
-form button:hover {
-    background-color: #005fa3;
+.contact button:hover {
+    /* background-color: darkblue; */
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+}
+
+/* TRIPS PAGE CSS BEGINS HERE 👇🏼*/
+.trips {
+    width: var(--devices-width);
+    margin: var(--devices-margin);
+    font-family: var(--body-font);
+}
+
+.trips h1 {
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    gap: 8px;
+}
+
+.description div {
+    border: 3px solid goldenrod;
+    width: 272px;
+}
+
+.description div img {
+    width: 100%;
+    height: 148px;
+    margin-bottom: 10px;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description p {
+    padding: 0 3px 0;
+}
+
+.trips table {
+    border: 1px solid blue;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: rgba(0, 0, 255, 0.836);
+    color: wheat;
+}
+
+tbody {
+    background-color: #81acd8d2;
+}
+
+#notes {
+    background-color: rgb(190, 136, 136);
+    border: 1px solid blue;
+    border-top: none;
+    padding: 5px;
+}
+
+#notes h3 {
+    color: red;
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+#notes p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+.call {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.call a {
+    display: inline-block;
+    width: 350px;
+    height: 35px;
+    border: 1px solid green;
+    border-radius: 3px;
+    font-size: larger;
+    padding-top: 5px;
+    background-color: #6bb0e2;
+    text-decoration: none;
 }
