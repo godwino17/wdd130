@@ -576,7 +576,7 @@ footer p {
 
 .contact button {
     background-color: blue;
-    Fix font-weight: bold;
+    font-weight: bold;
     color: white;
     position: absolute;
     width: 370px;
