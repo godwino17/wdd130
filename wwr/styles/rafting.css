@@ -83,7 +83,7 @@
     margin-top: 0px;
 }
 
-.home article h2 {
+.home #content h2 {
     text-align: center;
     color: #0077be;
 }
@@ -110,7 +110,7 @@
 }
 
 form .info {
-    color: #0077cc;
+    color: blue;
     font-size: 18px;
     font-weight: bold;
 }
@@ -147,8 +147,6 @@ form input {
 }
 
 .home form button:hover {
-    /* background-color: #0077cc; */
-    /* box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; */
     box-shadow: 0 0 20px #0077cc, 0 0 40px #0077cc;
     transform: scale(1.05);
 }
@@ -243,12 +241,12 @@ li {
     padding: 1px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--hbc);
-    color: var(--htc);
+    background-color: black;
+    color: white;
     font-family: var(--body-font);
 }
 
-.about .hero article {
+.about .hero div {
     position: absolute;
     width: 95%;
     height: 120px;
@@ -263,14 +261,14 @@ li {
     font-size: small;
 }
 
-.about .hero article img {
+.about .hero div img {
     float: right;
     width: 130px;
     padding: 0px 0px 1px 1px;
     height: 95px;
 }
 
-.about .hero article p {
+.about .hero div p {
     padding: 1px 0;
     width: 632px;
     height: 100px;
@@ -372,7 +370,7 @@ footer p {
     height: 10%;
 }
 
-/* Contact Us Page Addition Start here 👇🏼 */
+/* Contact Us Page CSS Start here 👇🏼 */
 
 /* Address section styling begin here 👇🏼 */
 .contact .address {
@@ -441,6 +439,14 @@ footer p {
     grid-template-columns: 1fr 1fr;
     margin: 15px 50px 15px 0;
     height: auto;
+}
+
+.content h2 {
+    text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: wheat;
+    background-color: #2c3e50;
 }
 
 .contact .map-div,
@@ -569,7 +575,8 @@ footer p {
 }
 
 .contact button {
-    background-color: #0077cc;
+    background-color: blue;
+    Fix font-weight: bold;
     color: white;
     position: absolute;
     width: 370px;
@@ -612,7 +619,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-.description h3 {
+.description h2 {
     margin-bottom: 10px;
     text-align: center;
 }
@@ -628,11 +635,12 @@ footer p {
 
 thead {
     background-color: rgba(0, 0, 255, 0.836);
-    color: wheat;
+    color: white;
 }
 
 tbody {
     background-color: #81acd8d2;
+    color: #000000;
 }
 
 #notes {
@@ -643,7 +651,7 @@ tbody {
 }
 
 #notes h3 {
-    color: red;
+    color: #000000;
     font-size: medium;
     margin-bottom: 10px;
 }
@@ -659,7 +667,7 @@ tbody {
     margin: 20px 0;
 }
 
-.call h4 {
+.call h2 {
     margin-bottom: 5px;
     font-weight: bold;
     font-size: large;
@@ -676,4 +684,5 @@ tbody {
     padding-top: 5px;
     background-color: #6bb0e2;
     text-decoration: none;
+    color: #0b1c2c;
 }
